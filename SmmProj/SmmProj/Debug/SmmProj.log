@@ -1,5 +1,0 @@
-﻿  SmmProj.cpp
-C:\Users\anaop\OneDrive\Desktop\MyProjects\SMM-SubmarineProject\SmmProj\SmmProj\SmmProj.cpp(13,17): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\anaop\OneDrive\Desktop\MyProjects\SMM-SubmarineProject\SmmProj\SmmProj\SmmProj.cpp(20,21): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\anaop\OneDrive\Desktop\MyProjects\SMM-SubmarineProject\SmmProj\SmmProj\SmmProj.cpp(137,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
-  SmmProj.vcxproj -> C:\Users\anaop\OneDrive\Desktop\MyProjects\SMM-SubmarineProject\SmmProj\Debug\SmmProj.exe
