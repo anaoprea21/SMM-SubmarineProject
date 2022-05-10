@@ -1,1 +1,10 @@
-﻿  SubmarineProj.vcxproj -> C:\Users\anaop\OneDrive\Desktop\MyProjects\SMM-SubmarineProject\SubmarineProj\Debug\SubmarineProj.exe
+﻿  Main.cpp
+C:\Users\anaop\OneDrive\Desktop\MyProjects\SMM-SubmarineProject\SubmarineProj\SubmarineProj\Main.cpp(43,12): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\anaop\OneDrive\Desktop\MyProjects\SMM-SubmarineProject\SubmarineProj\SubmarineProj\Main.cpp(44,12): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\anaop\OneDrive\Desktop\MyProjects\SMM-SubmarineProject\SubmarineProj\SubmarineProj\Main.cpp(49,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\anaop\OneDrive\Desktop\MyProjects\SMM-SubmarineProject\SubmarineProj\SubmarineProj\Main.cpp(50,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\anaop\OneDrive\Desktop\MyProjects\SMM-SubmarineProject\SubmarineProj\SubmarineProj\Main.cpp(52,11): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\anaop\OneDrive\Desktop\MyProjects\SMM-SubmarineProject\SubmarineProj\SubmarineProj\Main.cpp(53,11): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\anaop\OneDrive\Desktop\MyProjects\SMM-SubmarineProject\SubmarineProj\SubmarineProj\Main.cpp(141,20): warning C4018: '<': signed/unsigned mismatch
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  SubmarineProj.vcxproj -> C:\Users\anaop\OneDrive\Desktop\MyProjects\SMM-SubmarineProject\SubmarineProj\Debug\SubmarineProj.exe

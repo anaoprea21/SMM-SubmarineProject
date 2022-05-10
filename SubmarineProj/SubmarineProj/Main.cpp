@@ -338,7 +338,7 @@ int main()
 
 		waterShader.use();
 		renderWater(waterModel, waterShader);
-		renderWater(waterModel, waterShader);
+
 		renderLight(waterShader);
 
 		if (glfwGetKey(window, GLFW_KEY_Z) == GLFW_PRESS)
