@@ -327,6 +327,7 @@ int main()
 
 	Shader waterShader("Shaders/water.vs", "Shaders/water.fs");
 	Model waterModel(FileSystem::getPath("Assets/water-surface/water.obj"));
+	Model dolphinModel(FileSystem::getPath("Assets/Dolphin/untitled.obj"));
 
 	while (!glfwWindowShouldClose(window))
 	{
@@ -352,10 +353,18 @@ int main()
 		if (glfwGetKey(window, GLFW_KEY_Q) == GLFW_PRESS)
 			skyboxInit(faces3);
 
+		renderObj(dolphinModel, waterShader, -5.0f, 0.0f, -50.0f);
+		renderObj(dolphinModel, waterShader, 0.0f, 0.0f, -60.0f);
+		renderObj(dolphinModel, waterShader, -10.0f, 0.0f, -60.0f);
+
+
+
 		//render the skybox
 		glDepthFunc(GL_LEQUAL);
 		skyboxShader.use();
 		renderSkyBox(skyboxShader);
+
+
 
 		glfwSwapBuffers(window);
 		glfwPollEvents();
