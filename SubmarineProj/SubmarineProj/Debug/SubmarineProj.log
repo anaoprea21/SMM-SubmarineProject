@@ -1,10 +1,12 @@
-﻿  Main.cpp
-C:\Users\anaop\OneDrive\Desktop\MyProjects\SMM-SubmarineProject\SubmarineProj\SubmarineProj\Main.cpp(43,12): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\anaop\OneDrive\Desktop\MyProjects\SMM-SubmarineProject\SubmarineProj\SubmarineProj\Main.cpp(44,12): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\anaop\OneDrive\Desktop\MyProjects\SMM-SubmarineProject\SubmarineProj\SubmarineProj\Main.cpp(49,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\anaop\OneDrive\Desktop\MyProjects\SMM-SubmarineProject\SubmarineProj\SubmarineProj\Main.cpp(50,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
-C:\Users\anaop\OneDrive\Desktop\MyProjects\SMM-SubmarineProject\SubmarineProj\SubmarineProj\Main.cpp(52,11): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\anaop\OneDrive\Desktop\MyProjects\SMM-SubmarineProject\SubmarineProj\SubmarineProj\Main.cpp(53,11): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-C:\Users\anaop\OneDrive\Desktop\MyProjects\SMM-SubmarineProject\SubmarineProj\SubmarineProj\Main.cpp(141,20): warning C4018: '<': signed/unsigned mismatch
-LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
-  SubmarineProj.vcxproj -> C:\Users\anaop\OneDrive\Desktop\MyProjects\SMM-SubmarineProject\SubmarineProj\Debug\SubmarineProj.exe
+﻿  glad.c
+  Main.cpp
+D:\UNITBV\Anul II\Anul II, Sem II\SMM\SMM-SubmarineProject\SubmarineProj\SubmarineProj\Main.cpp(43,12): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\UNITBV\Anul II\Anul II, Sem II\SMM\SMM-SubmarineProject\SubmarineProj\SubmarineProj\Main.cpp(44,12): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\UNITBV\Anul II\Anul II, Sem II\SMM\SMM-SubmarineProject\SubmarineProj\SubmarineProj\Main.cpp(49,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\UNITBV\Anul II\Anul II, Sem II\SMM\SMM-SubmarineProject\SubmarineProj\SubmarineProj\Main.cpp(50,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\UNITBV\Anul II\Anul II, Sem II\SMM\SMM-SubmarineProject\SubmarineProj\SubmarineProj\Main.cpp(52,11): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\UNITBV\Anul II\Anul II, Sem II\SMM\SMM-SubmarineProject\SubmarineProj\SubmarineProj\Main.cpp(53,11): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\UNITBV\Anul II\Anul II, Sem II\SMM\SMM-SubmarineProject\SubmarineProj\SubmarineProj\Main.cpp(141,20): warning C4018: '<': signed/unsigned mismatch
+  stb_image.cpp
+  Generating Code...
+LINK : fatal error LNK1104: cannot open file 'glfw3.lib'
