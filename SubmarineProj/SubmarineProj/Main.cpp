@@ -392,6 +392,9 @@ int main()
 	Model subModel(FileSystem::getPath("Assets/sub/Odyssey_OBJ.obj"));
 	Model dolphinModel(FileSystem::getPath("Assets/Dolphin/untitled.obj"));
 
+	Model fishModel(FileSystem::getPath("Assets/fish/fishOBJ.obj"));
+	Model nemoModel(FileSystem::getPath("Assets/fish/nemo/OBJ.obj"));
+
 	while (!glfwWindowShouldClose(window))
 	{
 		keyInput(window);
@@ -421,7 +424,18 @@ int main()
 		renderObj(dolphinModel, waterShader, 0.0f, 0.0f, -60.0f);
 		renderObj(dolphinModel, waterShader, -10.0f, 0.0f, -60.0f);
 
-
+		renderObj(fishModel, waterShader, -15.0f, -33.0f, -62.0f);
+		renderObj(fishModel, waterShader, -40.0f, -30.0f, -65.0f);
+		renderObj(fishModel, waterShader, -20.0f, -35.0f, -70.0f);
+		renderObj(fishModel, waterShader, -25.0f, -30.0f, -67.0f);
+		renderObj(fishModel, waterShader, -30.0f, -25.0f, -60.0f);
+		renderObj(nemoModel, waterShader, 42.0f, -70.0f, -65.0f);
+		renderObj(nemoModel, waterShader, 48.0f, -75.0f, -60.0f);
+		renderObj(nemoModel, waterShader, 45.0f, -70.0f, -65.0f);
+		renderObj(nemoModel, waterShader, 35.0f, -70.0f, -60.0f);
+		renderObj(nemoModel, waterShader, 38.0f, -75.0f, -67.0f);
+		renderObj(nemoModel, waterShader, 33.0f, -70.0f, -60.0f);
+		renderObj(nemoModel, waterShader, 30.0f, -75.0f, -69.0f);
 
 		//render the skybox
 		glDepthFunc(GL_LEQUAL);
