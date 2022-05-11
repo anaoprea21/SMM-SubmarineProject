@@ -465,8 +465,6 @@ int main()
 		skyboxShader.use();
 		renderSkyBox(skyboxShader);
 
-
-
 		glfwSwapBuffers(window);
 		glfwPollEvents();
 	}
