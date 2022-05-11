@@ -397,6 +397,8 @@ int main()
 	Model tropicalFishModel(FileSystem::getPath("Assets/fish/tropical/fish.obj"));
 	Model jellyfishModel(FileSystem::getPath("Assets/fish/jellyfish/Jellyfish.obj"));
 
+	Model islandModel(FileSystem::getPath("Assets/island/SceneForSaleDone.obj"));
+
 	while (!glfwWindowShouldClose(window))
 	{
 		keyInput(window);
@@ -455,6 +457,8 @@ int main()
 		renderObj(jellyfishModel, waterShader, -85.0f, -27.0f, 105.0f);
 		renderObj(jellyfishModel, waterShader, -70.0f, -15.0f, 112.0f);
 		renderObj(jellyfishModel, waterShader, -60.0f, -25.0f, 105.0f);
+
+		renderObj(islandModel, waterShader, 200, 0, 300);
 
 		//render the skybox
 		glDepthFunc(GL_LEQUAL);
