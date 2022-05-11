@@ -15,11 +15,15 @@
 #include <vector>
 #include <string>
 
+#include"Submarin.h"
+
 const int SCREEN_WIDTH = 1280;
 const int SCREEN_HEIGHT = 720;
 
 glm::vec3 cameraPos(70.0f, 10.0f, 10.0f);
 Camera camera(cameraPos);
+
+Submarin sub(glm::vec3(50.0f, -3.0f, 0.0f));
 
 // set the mouse position to be the center of the screen
 float lastX = SCREEN_WIDTH / 2.0f;
@@ -265,6 +269,37 @@ void renderSkyBox(Shader& shader)
 
 }
 
+void renderSub(Model& model, glm::mat4 modelMatrix, Shader& shader)
+{
+	modelMatrix = glm::rotate(modelMatrix, glm::radians(sub.getYaw()), WORLD_UP);
+	// Offset the original rotation of the model
+	modelMatrix = glm::rotate(modelMatrix, glm::radians(-90.0f), WORLD_UP);
+	// resize the model
+	modelMatrix = glm::scale(modelMatrix, glm::vec3(0.02f, 0.02f, 0.02f));
+
+	// apply transformation matrix
+	shader.setMat4("model", modelMatrix);
+
+	model.Draw(shader);
+}
+
+void configSub(Model& subModel, Shader& shader)
+{
+	// view transition
+	glm::mat4 viewMatrix = camera.GetViewMatrix();
+	shader.setMat4("view", viewMatrix);
+	// projection transformation
+	glm::mat4 projMatrix = camera.GetProjMatrix((float)SCREEN_WIDTH / (float)SCREEN_HEIGHT);
+	shader.setMat4("projection", projMatrix);
+
+	// model conversion
+	glm::mat4 modelMatrix = glm::mat4(1.0f);
+	modelMatrix = glm::translate(modelMatrix, sub.getMidValPosition());
+	modelMatrix = glm::rotate(modelMatrix, glm::radians(sub.getYaw() / 2), WORLD_UP);
+
+	renderSub(subModel, modelMatrix, shader);
+}
+
 void renderWater(Model& model, Shader& shader)
 {
 	// view transition
@@ -327,6 +362,8 @@ int main()
 
 	Shader waterShader("Shaders/water.vs", "Shaders/water.fs");
 	Model waterModel(FileSystem::getPath("Assets/water-surface/water.obj"));
+	//Model subModel(FileSystem::getPath("Assets/submarine/Seaview submarine/Seaview submarine.obj"));
+	Model subModel(FileSystem::getPath("Assets/sub/Odyssey_OBJ.obj"));
 	Model dolphinModel(FileSystem::getPath("Assets/Dolphin/untitled.obj"));
 
 	while (!glfwWindowShouldClose(window))
@@ -353,6 +390,7 @@ int main()
 		if (glfwGetKey(window, GLFW_KEY_Q) == GLFW_PRESS)
 			skyboxInit(faces3);
 
+		configSub(subModel, waterShader);
 		renderObj(dolphinModel, waterShader, -5.0f, 0.0f, -50.0f);
 		renderObj(dolphinModel, waterShader, 0.0f, 0.0f, -60.0f);
 		renderObj(dolphinModel, waterShader, -10.0f, 0.0f, -60.0f);
