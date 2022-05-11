@@ -90,6 +90,32 @@ void keyInput(GLFWwindow* window)
 	{
 		camera.ProcessKeyboard(UP, 0.03f);
 	}
+
+	//Submarin
+	if (glfwGetKey(window, GLFW_KEY_UP) == GLFW_PRESS)
+	{
+		sub.ProcessKeyboard(K_FORWARD, 0.03f);
+	}
+	if (glfwGetKey(window, GLFW_KEY_LEFT) == GLFW_PRESS)
+	{
+		sub.ProcessKeyboard(K_LEFT, 0.03f);
+	}
+	if (glfwGetKey(window, GLFW_KEY_RIGHT) == GLFW_PRESS)
+	{
+		sub.ProcessKeyboard(K_RIGHT, 0.03f);
+	}
+	if (glfwGetKey(window, GLFW_KEY_DOWN) == GLFW_PRESS)
+	{
+		sub.ProcessKeyboard(K_BACKWARD, 0.03f);
+	}
+	if (glfwGetKey(window, GLFW_KEY_PAGE_UP) == GLFW_PRESS)
+	{
+		sub.ProcessKeyboard(K_UP, 0.03f);
+	}
+	if (glfwGetKey(window, GLFW_KEY_PAGE_DOWN) == GLFW_PRESS)
+	{
+		sub.ProcessKeyboard(K_DOWN, 0.03f);
+	}
 }
 
 bool init()
