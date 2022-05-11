@@ -395,6 +395,7 @@ int main()
 	Model fishModel(FileSystem::getPath("Assets/fish/fishOBJ.obj"));
 	Model nemoModel(FileSystem::getPath("Assets/fish/nemo/OBJ.obj"));
 	Model tropicalFishModel(FileSystem::getPath("Assets/fish/tropical/fish.obj"));
+	Model jellyfishModel(FileSystem::getPath("Assets/fish/jellyfish/Jellyfish.obj"));
 
 	while (!glfwWindowShouldClose(window))
 	{
@@ -444,6 +445,16 @@ int main()
 		renderObj(tropicalFishModel, waterShader, -105.0f, -135.0f, 209.0f);
 		renderObj(tropicalFishModel, waterShader, -110.0f, -130.0f, 219.0f);
 		renderObj(tropicalFishModel, waterShader, -115.0f, -135.0f, 222.0f);
+
+		renderObj(jellyfishModel, waterShader, -50.0f, -5.0f, 117.0f);
+		renderObj(jellyfishModel, waterShader, -75.0f, -7.0f, 122.0f);
+		renderObj(jellyfishModel, waterShader, -60.0f, -17.0f, 115.0f);
+		renderObj(jellyfishModel, waterShader, -66.0f, -12.0f, 125.0f);
+		renderObj(jellyfishModel, waterShader, -77.0f, -23.0f, 119.0f);
+		renderObj(jellyfishModel, waterShader, -50.0f, -19.0f, 108.0f);
+		renderObj(jellyfishModel, waterShader, -85.0f, -27.0f, 105.0f);
+		renderObj(jellyfishModel, waterShader, -70.0f, -15.0f, 112.0f);
+		renderObj(jellyfishModel, waterShader, -60.0f, -25.0f, 105.0f);
 
 		//render the skybox
 		glDepthFunc(GL_LEQUAL);
