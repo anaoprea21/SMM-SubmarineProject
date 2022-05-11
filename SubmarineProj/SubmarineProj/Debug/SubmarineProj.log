@@ -1,1 +1,9 @@
-﻿LINK : fatal error LNK1104: cannot open file 'assimp.lib'
+﻿  Main.cpp
+D:\UNITBV\Anul II\Anul II, Sem II\SMM\SMM-SubmarineProject\SubmarineProj\SubmarineProj\Main.cpp(47,12): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\UNITBV\Anul II\Anul II, Sem II\SMM\SMM-SubmarineProject\SubmarineProj\SubmarineProj\Main.cpp(48,12): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\UNITBV\Anul II\Anul II, Sem II\SMM\SMM-SubmarineProject\SubmarineProj\SubmarineProj\Main.cpp(53,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\UNITBV\Anul II\Anul II, Sem II\SMM\SMM-SubmarineProject\SubmarineProj\SubmarineProj\Main.cpp(54,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+D:\UNITBV\Anul II\Anul II, Sem II\SMM\SMM-SubmarineProject\SubmarineProj\SubmarineProj\Main.cpp(56,11): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\UNITBV\Anul II\Anul II, Sem II\SMM\SMM-SubmarineProject\SubmarineProj\SubmarineProj\Main.cpp(57,11): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+D:\UNITBV\Anul II\Anul II, Sem II\SMM\SMM-SubmarineProject\SubmarineProj\SubmarineProj\Main.cpp(171,20): warning C4018: '<': signed/unsigned mismatch
+LINK : fatal error LNK1104: cannot open file 'assimp.lib'
